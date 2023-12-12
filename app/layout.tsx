@@ -26,7 +26,7 @@ export default function RootLayout({
                   forcedTheme="light"
               >
                   <NextTopLoader
-                      color="#006FEE"
+                      color="#F5A524"
                       zIndex={1600}
                       showSpinner={false}
                   />
