@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground-rgb: rgb(24, 25, 27);
+    --background-start-rgb: rgb(255, 255, 255);
+    --background-end-rgb: rgb(255, 255, 255);
+  }
+
+  .dark {
+    --foreground-rgb: rgb(245, 245, 245);
+    --background-start-rgb: rgb(01, 08, 21);
+    --background-end-rgb: rgb(01, 08, 21);
+  }
+}
+
+@layer base {
+  body {
+    color: var(--foreground-rgb);
+    background: var(--background-start-rgb);
+  }
+
+}
