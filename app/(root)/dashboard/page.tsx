@@ -1,16 +1,24 @@
-import RootNavbar from '@/app/components/navbar/RootNavbar'
-import React from 'react'
+import MainContent from "@/app/components/dashboard/MainContent";
+import RootNavbar from "@/app/components/navbar/RootNavbar";
+import Sidebar from "@/app/components/sidebar/Sidebar";
+import React from "react";
 
 const DashboardPage = () => {
-  return (
-      <div>
-          <RootNavbar />
+    return (
+        <div>
+            <RootNavbar />
 
-          <main className="max-w-screen-2xl mx-auto px-5 bg-black/5 h-10">
+            <main className="max-w-screen-2xl mx-auto px-5">
+                <div className="min-h-[calc(100vh-100px)] flex gap-10">
+                    {/* the sidebar */}
+                    <Sidebar />
 
-          </main>
-      </div>
-  );
-}
+                    {/* the main-content */}
+                    <MainContent />
+                </div>
+            </main>
+        </div>
+    );
+};
 
-export default DashboardPage
+export default DashboardPage;
